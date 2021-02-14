@@ -1,1 +1,1 @@
-export const MSGP_VERSION = 10;
+export { UIntID, msgEncode, msgDecode } from './msgp';

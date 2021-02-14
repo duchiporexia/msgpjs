@@ -9,11 +9,8 @@ module.exports = {
     'no-console': 'off',
     'object-curly-newline': 'off',
     'function-paren-newline': 'off',
-    'prefer-const': 'error'
+    'prefer-const': 'error',
   },
   parser: '@typescript-eslint/parser',
-  extends: [
-    'prettier/@typescript-eslint',
-    'plugin:prettier/recommended'
-  ],
+  extends: ['prettier/@typescript-eslint', 'plugin:prettier/recommended'],
 };

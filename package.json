@@ -1,6 +1,6 @@
 {
   "name": "msgpjs",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A library for msgp",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -34,6 +34,7 @@
     "@msgpack/msgpack": "2.3.0"
   },
   "devDependencies": {
+    "axios": "0.21.1",
     "@types/node": "^14.14.10",
     "jest":"^26.6.3",
     "@types/jest": "^26.0.15",
