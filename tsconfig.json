@@ -6,7 +6,7 @@
     "allowJs": true,
     "declaration": true,
     "outDir": "lib",
-    "rootDirs": ["src"],
+//    "rootDirs": ["src"],
     "sourceMap": true,
     "jsx": "react",
     "isolatedModules": true,

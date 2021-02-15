@@ -32,15 +32,9 @@ test('msgp api test', async () => {
     responseType: 'arraybuffer',
   })) as any;
   const newFoo = msgDecode(ret.data) as Foo;
-  expect(newFoo.id.toString()).toEqual(foo.id.toString());
-  expect(newFoo.name).toEqual(foo.name);
-  expect(newFoo.age).toEqual(foo.age + 180);
-  deepStrictEqual(newFoo.map, foo.map);
-  deepStrictEqual(newFoo.map2, foo.map2);
-  deepStrictEqual(newFoo.arr, foo.arr);
-  deepStrictEqual(newFoo.arr2, foo.arr2);
-  deepStrictEqual(newFoo.dog, foo.dog);
-  deepStrictEqual(newFoo.dog2, foo.dog2);
+  deepStrictEqual(newFoo.age, 198);
+  newFoo.age = 18;
+  deepStrictEqual(newFoo, foo);
+  expect(newFoo.id.str).toEqual(foo.id.str);
   expect(newFoo.createTime.getTime()).toEqual(foo.createTime.getTime());
-  expect(newFoo.updateTime).toEqual(null);
 }, 9999999);
